@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+    scroll-behavior: smooth;
+    /* position: relative; */
+    
+}
+body{
+    min-width: 1000px;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/MyWeb/Image/bgr2.jpg');
+    background-size: cover;
+    z-index: 1;
+    overflow: hidden;
+}
+.banner .content{
+    text-align: center;
+    position: relative;
+    
+}
+.banner .content h1{
+    font-size: 2em;
+    color: white;
+}
+.banner .content .box{
+    justify-content: center;
+    /* padding-right: 13px; */
+    width: 100%;
+    height: calc(100%);
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner .content .box .imgBx{
+    position: relative;
+    width: 240px;
+    height: 240px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.banner .content .box .text{
+    position: relative;
+}
+.banner .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner .content h1 span{
+    color: rgb(0, 17, 255);
+}
+
+.banner .content h2{
+    margin-top: 5px;
+    color: thistle;
+    font-weight: 300;
+}
+.banner .content h2 span{
+    font-weight: 700;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky{
+    background: white;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.sticky .logo{
+    color: black;
+}
+
+header .logo span{
+    color: #ff0157;
+}
+
+header .nav{
+    position: relative;
+    display: flex;
+    list-style-type: none;   
+}
+
+header .nav li{
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+header .nav li a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+header .nav li a:hover{
+    color: tomato;
+    transition: 0.9s;
+}
+header .nav li a::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transform: translateX(-50%) scaleX(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-transition: transform 250ms;
+    transition: transform 250ms;
+}
+header .nav li a:hover::after{
+    -webkit-transform: translateX(-50%) scale(1);   
+    transform: translateX(-50%) scale(1);   
+}
+header.sticky .nav li a{
+    color: black;
+}
+header .nav li a:hover{
+    color: rgb(212, 41, 41);
+}
+.about{
+    background-color: rgba(73, 22, 22, 0.5);
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col35{
+    position: relative;
+    width: 33%;
+}
+.row .col65{
+    position: relative;
+    width: 63%;
+}
+
+.titleText{
+    color: black;
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.titleText span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.row .col65 .imgBx{
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+}
+
+.row .col65 .imgBx ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+}
+.row .col65 .imgBx ul li{
+    list-style: none;
+    position: relative;
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid black;
+    float: left;
+    transition: 0.09s;
+    text-align: center ;
+}
+.row .col65 .imgBx ul:hover li{
+    width: 10%;
+}
+.row .col65 .imgBx ul li:hover {
+    width: 60%;
+}
+
+.row .col65 .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about{
+    padding: 100px;
+}
+.family{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.family .col-1{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+}
+.family .content{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    /* max-width: 1200px; */
+    z-index: 2;
+}
+.family .content .card{
+    position: relative;
+    /* width: 600px; */
+    /* height: 400px; */
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+.family .content .card .box{
+    padding: 20px;
+    text-align: center;
+}
+.family .content .card .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+.family .content .card .box .imgBx img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.family .content .card .box .text{
+    padding: 15px 0 5px;
+    transition: 0.5s;
+    transform: translateY(100px);
+    opacity: 0;
+}
+.family .content .card:hover .box .text{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.family .content .card .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
+
+.skill{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    background: url('/MyWeb/Image/bgr3.jpg');
+    
+}
+.skill .container{
+    background-color: #0a2b3c;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+    8px 30px 30px rgba(0, 0, 0, 0.4),
+    inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 10%;
+}
+.skill .container h2{
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #1f9cff;
+}
+.skill .container .skills{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+    8px 30px 30px rgba(0, 0, 0, 0.4),
+    inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+    padding : 13px 10px 10px;
+    background: linear-gradient(#616161 0%, #333 10% ,#222);
+    transition: 0.5s;
+    border-radius: 8px;
+    width: 600px;
+}
+.skill .container .skills::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+}
+.skill .container .skills h3{
+    min-width: 180px;
+    text-align: right;
+    padding-right: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.skill .container .skills .value{
+    position: relative;
+    width: 40px;
+    text-align: right;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.skill .container .skills .percent{
+    position: relative;
+    width: calc(100% - 220px);
+    height: 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    background: #151515;
+    box-shadow:  inset 0 0 10px black;
+    overflow: hidden;
+}
+.skill .container .skills .percent .progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: inset 0 0 2px black;
+    animation: animate 4s ease-in-out forwards;
+}
+
+@keyframes animate{
+    0%{
+        width: 0%;
+    }
+}
+
+.skill .container .skills:nth-child(2) .percent .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.skill .container .skills:nth-child(3) .percent .progress{
+    background: linear-gradient(45deg, #78c218, #dae3e9);
+}
+.skill .container .skills:nth-child(4) .percent .progress{
+    background: linear-gradient(45deg, #173f44, #815504);
+}
+.skill .container .skills:nth-child(5) .percent .progress{
+    background: linear-gradient(45deg, #808181, #431396);
+}
+.skill .container .skills:nth-child(6) .percent .progress{
+    background: linear-gradient(45deg, #ee09ee, #9ce97d);
+}
+
