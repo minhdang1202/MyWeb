@@ -987,6 +987,11 @@ header .nav li a:hover{
 }
 
 @media (max-width: 376px){
+    .contact .container .contact-form .form-box .input-box textarea {
+        width: 40%;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
     header .logo {
         font-size: 1.3em;
     }
